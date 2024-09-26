@@ -18,8 +18,14 @@
     //ora infine calcolo la nuova lunghezza del paragrafo senza la parola ma con gli asterischi
     $censoredLength = strlen($censoredparagraph);
     //e per ultimo stampo in pagina badwords.php il risultato della sottomissione del form con il paragrafo normale e successivamente la sua parlo censurata, ristampando il tutto
-    echo "<p>Nel paragrafo hai scritto: <h4>$paragraph</h4> e la sua lunghezza è: <h4>$originalLength caratteri</h4></p>";
-    echo "<p> Paragrafo con parola censurata : <h4>$censoredparagraph</h4> con la sua lunghezza di <h4>$censoredLength caratteri</h4>";
+    echo "<p>Nel paragrafo hai scritto:</p>";
+    echo "<h4>$paragraph</h4>";
+    echo  "<p>e la sua lunghezza è:</p>"; 
+    echo "<p>$originalLength caratteri</p>";
+    echo "<p>Paragrafo con parola censurata :</p>";
+    echo "<h4>$censoredparagraph</h4>";
+    echo "<p>con la sua lunghezza di</p>";
+    echo "<h4>$censoredLength caratteri</h4>";
     ?>
 </body>
 </html>
